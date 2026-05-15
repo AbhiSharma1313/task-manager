@@ -1,0 +1,133 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #babcc3, #013d3d);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container */
+.container {
+  width: 420px;
+  background: #bcae8e;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Title */
+h2 {
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+/* Input box */
+input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #000000;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #a9acba;
+  box-shadow: 0 0 5px rgba(17, 27, 70, 0.5);
+}
+
+/* Add button */
+button {
+  padding: 10px 14px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4d0b48;
+  color: rgb(219, 121, 121);
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #778c57;
+  transform: scale(1.05);
+}
+
+/* Task list */
+ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+/* Task item */
+li {
+  background: #caefee;
+  margin-bottom: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s;
+}
+
+li:hover {
+  background: #eef1ff;
+  transform: translateY(-2px);
+}
+
+/* Task text */
+li span {
+  flex: 1;
+  text-align: left;
+}
+
+/* Buttons inside task */
+li button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+}
+
+/* Done button */
+li button:first-of-type {
+  background: #040906;
+}
+
+li button:first-of-type:hover {
+  background: #38a169;
+}
+
+/* Delete button */
+li button:last-of-type {
+  background: #110707;
+}
+
+li button:last-of-type:hover {
+  background: #5b0000;
+}
+
+/* Completed task style */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+li button {
+  margin-left: 6px;
+}
+
+input {
+  font-size: 15px;
+}
